@@ -2,11 +2,6 @@
 
 A single-file mobile web app for planning race pacing, splits, breaks, and cutoffs for ultras and long race days. Supports Distance, Timed, and Backyard Ultra race formats.
 
-## Live site
-
-`https://<your-username>.github.io/<your-repo-name>/`
-(replace once the repo is set up)
-
 ## Running locally
 
 No build step, no dependencies. Just open `index.html` directly in a browser, or serve the folder with any static server.
