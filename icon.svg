@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#1b2229"/>
+      <stop offset="100%" stop-color="#0e1114"/>
+    </linearGradient>
+    <clipPath id="round">
+      <rect x="0" y="0" width="512" height="512"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#round)">
+    <!-- sky -->
+    <rect x="0" y="0" width="512" height="512" fill="url(#sky)"/>
+
+    <!-- far range, sits behind the letters -->
+    <path d="M0 384 L58 330 L104 362 L166 312 L226 358 L288 322 L346 360
+             L404 328 L456 358 L512 336 L512 512 L0 512 Z"
+          fill="#252e38"/>
+
+    <!-- RP wordmark, drawn before the front ridges so its base is occluded -->
+    <g transform="translate(120 168) scale(1.32)" fill="#d8a24a" fill-rule="evenodd">
+      <!-- R -->
+      <path d="M0 0 L58 0 A42 42 0 0 1 58 84 L50 84 L98 150 L64 150
+               L26 92 L26 150 L0 150 Z
+               M26 26 L58 26 A16 16 0 0 1 58 58 L26 58 Z"/>
+      <!-- P -->
+      <path d="M114 0 L172 0 A42 42 0 0 1 172 84 L140 84 L140 150 L114 150 Z
+               M140 26 L172 26 A16 16 0 0 1 172 58 L140 58 Z"/>
+    </g>
+
+    <!-- front ranges, layered over the base of the letters -->
+    <path d="M0 410 L68 368 L128 400 L198 360 L262 398 L330 364 L396 400
+             L454 372 L512 398 L512 512 L0 512 Z"
+          fill="#212831"/>
+
+    <path d="M0 442 L78 408 L148 440 L226 404 L300 438 L378 406 L448 440
+             L512 412 L512 512 L0 512 Z"
+          fill="#2a333c"/>
+
+    <path d="M0 474 L92 450 L180 476 L270 448 L358 474 L448 450 L512 470
+             L512 512 L0 512 Z"
+          fill="#1a2027"/>
+  </g>
+</svg>

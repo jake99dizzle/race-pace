@@ -5,6 +5,12 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="color-scheme" content="light dark">
 <title>Race Pace</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#0e1114">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="apple-mobile-web-app-title" content="Race Pace">
 <style>
   :root {
     --font-display: Futura, "Avenir Next Condensed", "Trebuchet MS", sans-serif;
@@ -3132,6 +3138,17 @@
   renderStations();
   renderSaved();
   showScreen('title');
+})();
+</script>
+
+<script>
+(function () {
+  if (!('serviceWorker' in navigator)) return;
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function () {
+      // Registration failure is not fatal: the app still runs online.
+    });
+  });
 })();
 </script>
 
