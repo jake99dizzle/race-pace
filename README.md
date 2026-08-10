@@ -15,3 +15,5 @@ Push `index.html` to the repo and enable GitHub Pages (Settings → Pages → de
 - Vanilla JS/HTML/CSS, no external libraries.
 - Themed SVG backdrops per race (Alpine, Forest, Desert, Night, Coastal, Snow, Track, City).
 - Saved races persist in `localStorage` only — clearing browser data or switching devices loses them (no sync yet).
+
+Copyright © 2026 jake99dizzle. All rights reserved.
