@@ -12,7 +12,7 @@
  * device to drop its old copies immediately.
  */
 
-var CACHE_VERSION = 'v1';
+var CACHE_VERSION = 'v2';
 var CACHE_NAME = 'race-pace-' + CACHE_VERSION;
 
 // Relative paths so this works from a GitHub Pages project subdirectory.
@@ -22,7 +22,8 @@ var PRECACHE = [
   './manifest.json',
   './icon-192.png',
   './icon-512.png',
-  './apple-touch-icon.png'
+  './apple-touch-icon.png',
+  './favicon-racepace.png'
 ];
 
 self.addEventListener('install', function (event) {
